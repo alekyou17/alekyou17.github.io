@@ -13,6 +13,12 @@
             font-size: 2em;
         }
     </style>
+    <!--JS-->
+    <script src="js/clock1.js"></script>
+    <script>
+        window.onload=function(){
+            setInterval(clockPainting,1000);}
+    </script>
     <script type="text/javascript">
         function send()
         {
@@ -53,7 +59,8 @@
         <td colspan="2" height="150" align="right"> <font size="5"><h1>Сайт web-студії "Web-DECO"</h1></font></td>
         </tr>
         <tr>
-        <td colspan="2"><font size="4"><b>
+        <td>
+            <font size="4"><b>
             <a href="#">Головна</a>&nbsp;&nbsp;
             <a href="#">Фотогалерея</a>&nbsp;&nbsp;
             <a href="#">Телефони</a>&nbsp;&nbsp;
@@ -64,6 +71,8 @@
         </tr>
         <tr>
         <td width="30%" valign="top">
+            <center><canvas id="canvas" height="120" width="120"></canvas></center>
+            <hr>
             <font size="5" color="navy"><h2>Новини</h2></font>
                 <font size="5">
             <ul>
